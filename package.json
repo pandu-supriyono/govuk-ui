@@ -1,0 +1,32 @@
+{
+  "name": "govuk-ui",
+  "version": "0.1.0",
+  "description": "React port of GOV.UK Design System components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Pandu Supriyono",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.7",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.6.1",
+    "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "govuk-frontend": "^4.3.1",
+    "react": "^18.2.0"
+  }
+}
