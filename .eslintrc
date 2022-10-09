@@ -2,7 +2,9 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 10
+    "project": [
+      "./tsconfig.json"
+    ]
   },
   "extends": [
     "plugin:import/recommended",
@@ -22,7 +24,7 @@
       "version": "detect"
     }
   },
-  "plugins": ["@typescript-eslint/eslint-plugin", "testing-library"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "testing-library", "prettier"],
   "rules": {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-use-before-define": "off",
@@ -71,6 +73,7 @@
     "import/no-named-as-default": "off",
     "prefer-object-spread": "off",
     "arrow-body-style": "off",
-    "react/sort-comp": "off"
+    "react/sort-comp": "off",
+    "prettier/prettier": "error"
   }
 }
