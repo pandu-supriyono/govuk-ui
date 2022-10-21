@@ -12,12 +12,14 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "airbnb-typescript",
+    "plugin:jest/recommended",
     "prettier"
   ],
   "env": {
     "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "settings": {
     "react": {

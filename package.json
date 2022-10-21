@@ -4,7 +4,7 @@
   "description": "React port of GOV.UK Design System components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -22,6 +22,8 @@
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
@@ -33,20 +35,27 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.1",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.6.1",
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.54.8",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.2"
   },
   "peerDependencies": {
     "govuk-frontend": "^4.3.1"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
   }
 }
