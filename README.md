@@ -13,7 +13,7 @@ them to suit your needs. At the same time, GOV.UK UI provides an idiomatic
 React and TypeScript developer experience, which means it may steer away from
 the Nunjucks macros originally provided with GOV.UK Frontend. For example:
 
-```ts
+```tsx
 import { FormGroup, Input, label } from "govuk-ui";
 
 const TextInput = () => {
