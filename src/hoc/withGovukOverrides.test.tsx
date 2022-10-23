@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { createRef, forwardRef } from 'react';
 import { OverridableComponentProps } from '../types/GovukOverrides';
 import withGovukOverrides from './withGovukOverrides';
 
@@ -60,5 +61,31 @@ describe('withGovukOverrides', () => {
     render(<MockComponent className="test" text={textContent} />);
 
     expect(screen.getByRole('button')).toHaveTextContent(textContent);
+  });
+
+  it('exposes a ref', () => {
+    const BaseMockComponentWithRef = forwardRef<
+      HTMLButtonElement,
+      OverridableComponentProps<{
+        text?: string;
+      }>
+    >((props, ref) => {
+      const { text, className, ...rest } = props;
+      return (
+        <button className={className} ref={ref} {...rest}>
+          {text || 'Default text'}
+        </button>
+      );
+    });
+
+    BaseMockComponentWithRef.displayName = 'BaseMockComponentWithRef';
+
+    const MockComponentWithRef = withGovukOverrides(BaseMockComponentWithRef);
+
+    const ref = createRef<HTMLElement>();
+
+    const { container } = render(<MockComponentWithRef ref={ref} />);
+
+    expect(ref.current).toEqual(container.querySelector('button'));
   });
 });
