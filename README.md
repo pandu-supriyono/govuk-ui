@@ -22,7 +22,7 @@ const TextInput = () => {
       <Label htmlFor="name">What is your name?</Label>
       <Input id="name" name="name" />
     </FormGroup>
-  )
+  );
 }
 
 ```
