@@ -1,19 +1,15 @@
-const path = require("path");
+const path = require('path');
+const fs = require('fs');
 
 module.exports = {
-  stories: [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@storybook/preset-scss"
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
   ],
-  framework: "@storybook/react",
+  framework: '@storybook/react',
   core: {
-    "disableTelemetry": true,
-  }
-}
+    disableTelemetry: true,
+  },
+};
