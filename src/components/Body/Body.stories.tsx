@@ -2,14 +2,14 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Body from './Body';
 
 export default {
-  title: 'Body',
+  title: 'Components/Body',
   component: Body,
   argTypes: {
     size: {
       options: [undefined, 's', 'l'],
-      control: 'radio'
-    }
-  }
+      control: 'radio',
+    },
+  },
 } as ComponentMeta<typeof Body>;
 
 const Template: ComponentStory<typeof Body> = (args) => <Body {...args} />;
