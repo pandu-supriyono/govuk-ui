@@ -11,7 +11,7 @@ Frontend](https://github.com/alphagov/govuk-frontend) classes whilst exposing
 components at a low level (akin to just using HTML) so that you can compose
 them to suit your needs. At the same time, GOV.UK UI provides an idiomatic
 React and TypeScript developer experience, which means it may steer away from
-the Nunjucks macros originally provided with GOV.UK Frontend. For example:
+the Nunjucks macros originally provided by GOV.UK Frontend. For example:
 
 ```tsx
 import { FormGroup, Input, label } from "govuk-ui";
