@@ -3,8 +3,8 @@ import { ComponentPropsWithoutRef, FC } from 'react';
 import WithGovukOverrides from '../../hoc/withGovukOverrides';
 import { OverridableComponentProps } from '../../types/GovukOverrides';
 
-export interface BodyOwnProps {
-  size?: 's' | 'l';
+interface BodyOwnProps {
+  size?: 'xs' | 's' | 'm' | 'l';
 }
 
 export type BodyProps = OverridableComponentProps<

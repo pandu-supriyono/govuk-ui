@@ -22,6 +22,16 @@ describe('Body', () => {
     expect(element.classList.value).toEqual('govuk-body');
   });
 
+  it("should supply the .govuk-body-s class when 'xs' is specified as size prop", () => {
+    const text = 'Hello world';
+
+    render(<Body size="xs">{text}</Body>);
+
+    const element = screen.getByText(text);
+
+    expect(element.classList.value).toEqual('govuk-body-xs');
+  });
+
   it("should supply the .govuk-body-s class when 's' is specified as size prop", () => {
     const text = 'Hello world';
 
@@ -30,6 +40,16 @@ describe('Body', () => {
     const element = screen.getByText(text);
 
     expect(element.classList.value).toEqual('govuk-body-s');
+  });
+
+  it("should supply the .govuk-body-l class when 'm' is specified as size prop", () => {
+    const text = 'Hello world';
+
+    render(<Body size="m">{text}</Body>);
+
+    const element = screen.getByText(text);
+
+    expect(element.classList.value).toEqual('govuk-body-m');
   });
 
   it("should supply the .govuk-body-l class when 'l' is specified as size prop", () => {

@@ -6,7 +6,7 @@ export default {
   component: Body,
   argTypes: {
     size: {
-      options: [undefined, 's', 'l'],
+      options: [undefined, 'xs', 's', 'm', 'l', 'lead'],
       control: 'radio',
     },
   },
