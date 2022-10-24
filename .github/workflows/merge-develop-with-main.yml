@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  merge-develo-with-main:
+  merge-develop-with-main:
     runs-on: ubuntu-latest
     steps:
       - uses: dequelabs/action-sync-branches@v1
