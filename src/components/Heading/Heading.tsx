@@ -11,7 +11,8 @@ interface HeadingOwnProps<T extends HeadingType> {
 }
 
 export type HeadingProps<T extends HeadingType> = OverridableComponentProps<
-  Omit<ComponentPropsWithoutRef<T>, keyof HeadingOwnProps<T>> & HeadingOwnProps<T>
+  Omit<ComponentPropsWithoutRef<T>, keyof HeadingOwnProps<T>> &
+    HeadingOwnProps<T>
 >;
 
 const Heading = <T extends HeadingType = 'h1'>(props: HeadingProps<T>) => {
