@@ -4,7 +4,7 @@ import withGovukOverrides from '../../hoc/withGovukOverrides';
 import { OverridableComponentProps } from '../../types/GovukOverrides';
 import { GovukWidth } from '../../types/Width';
 
-interface ColumnOwnProps {
+export interface ColumnOwnProps {
   width?: GovukWidth;
 }
 
