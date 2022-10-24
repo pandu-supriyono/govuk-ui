@@ -5,6 +5,7 @@
  */
 
 export { default as Body } from './Body';
+export { default as Link } from './Link';
 
 /* Objects
  * More or less corresponds to the GOV.UK
