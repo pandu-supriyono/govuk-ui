@@ -17,11 +17,15 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>((props, ref) => {
   const { className, colour, noUnderline, noVisitedState, children, ...rest } =
     props;
 
-  const classes = classNames('govuk-link', {
-    [`govuk-link--${colour}`]: !!colour,
-    'govuk-link--no-underline': noUnderline,
-    'govuk-link--no-visited-state': noVisitedState,
-  });
+  const classes = classNames(
+    'govuk-link',
+    {
+      [`govuk-link--${colour}`]: !!colour,
+      'govuk-link--no-underline': noUnderline,
+      'govuk-link--no-visited-state': noVisitedState,
+    },
+    className,
+  );
 
   return (
     <a className={classes} ref={ref} {...rest}>

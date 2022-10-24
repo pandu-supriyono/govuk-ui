@@ -57,4 +57,12 @@ describe('Link', () => {
 
     expect(screen.getByRole('link').getAttribute('href')).toEqual('/link');
   });
+
+  it('allows the passing of a additional classNames', () => {
+    render(<Link href="/link" className="custom-class" />);
+
+    expect(screen.getByRole('link').classList.value).toEqual(
+      'govuk-link custom-class',
+    );
+  });
 });
