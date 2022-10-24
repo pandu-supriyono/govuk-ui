@@ -4,7 +4,7 @@ import WithGovukOverrides from '../../hoc/withGovukOverrides';
 import { OverridableComponentProps } from '../../types/GovukOverrides';
 
 interface BodyOwnProps {
-  size?: 's' | 'l';
+  size?: 'xs' | 's' | 'm' | 'l';
 }
 
 export type BodyProps = OverridableComponentProps<
