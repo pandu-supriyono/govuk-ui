@@ -5,6 +5,7 @@
  */
 
 export { default as Body } from './Body';
+export { default as Caption } from './Caption';
 export { default as Heading } from './Heading';
 export { default as Link } from './Link';
 export { default as List } from './List';
