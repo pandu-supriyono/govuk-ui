@@ -7,7 +7,8 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "build": "rimraf ./dist && tsc"
   },
   "keywords": [],
   "author": "Pandu Supriyono",
@@ -45,6 +46,7 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.32.7",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",

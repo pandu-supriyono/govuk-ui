@@ -12,8 +12,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "jsxFactory": "h",
-    "sourceMap": true
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "dist"
   },
   "include": ["src"],
   "exclude": ["dist", "node_modules", "*/*/dist", "*/*/node_modules"]
