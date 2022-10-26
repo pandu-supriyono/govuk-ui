@@ -29,3 +29,5 @@ export { default as WidthContainer } from './WidthContainer';
  * that they are composed of:
  * https://github.com/alphagov/govuk-frontend/tree/main/src/govuk/components
  */
+
+export { default as BackLink } from './BackLink';
