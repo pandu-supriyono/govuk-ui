@@ -8,6 +8,7 @@ export { default as Body } from './Body';
 export { default as Caption } from './Caption';
 export { default as Fieldset } from './Fieldset';
 export { default as Heading } from './Heading';
+export { default as Label } from './Label';
 export { default as Link } from './Link';
 export { default as List } from './List';
 export { default as SectionBreak } from './SectionBreak';
