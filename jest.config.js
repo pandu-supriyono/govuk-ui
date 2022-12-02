@@ -4,6 +4,7 @@ module.exports = {
   testEnvironment: 'jest-environment-jsdom',
   preset: 'ts-jest',
   moduleDirectories: ['node_modules'],
+  modulePathIgnorePatterns: ["<rootDir>/dist/"],
   testMatch: ["**/?(*.)+(spec|test).[jt]s?(x)"]
 };
 
